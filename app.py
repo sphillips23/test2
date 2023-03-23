@@ -44,14 +44,15 @@ def add():
     else:
         return redirect(url_for("index"))
 
-
-if __name__ == "__main__":
-    app.run(debug=True)
-
 @app.route("/about", methods=["GET","POST"])
 def index():
     return render_template(
         "about.html", pageTitle="About us", friends=friend_list
     )
+
+if __name__ == "__main__":
+    app.run(debug=True)
+
+
 
 
