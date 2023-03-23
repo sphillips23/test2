@@ -11,10 +11,18 @@
       rel="stylesheet"
       href="{{ url_for('static', filename='css/stylesheet.css') }}"
     />
+
+    <a href="http://127.0.0.1:5000/about">About</a>
+    <a href="http://127.0.0.1:5000/">Home</a>
+    
     <title>{{ pageTitle }}</title>
   </head>
 
   <body>
     <div class="container">{% block body %}xx {% endblock %}</div>
+
+    
+    
+
   </body>
 </html>

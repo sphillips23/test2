@@ -45,7 +45,7 @@ def add():
         return redirect(url_for("index"))
     
 @app.route("/about", methods=["GET","POST"])
-def index():
+def about():
     return render_template(
         "about.html", pageTitle="About us", friends=friend_list
     )
