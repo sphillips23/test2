@@ -10,7 +10,7 @@ friend_list = [
 @app.route("/", methods=["GET", "POST"])
 def index():
     return render_template(
-        "index.html", pageTitle="Web form template", friends=friend_list
+        "index.html", pageTitle="Home Page", friends=friend_list
     )
 
 
@@ -47,3 +47,10 @@ def add():
 
 if __name__ == "__main__":
     app.run(debug=True)
+
+
+@app.route("/about", methods=["GET", "POST"])
+def index():
+    return render_template(
+        "about.html", pageTitle="Home Page", friends=friend_list
+    )
