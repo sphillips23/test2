@@ -2,15 +2,15 @@ from flask import Flask, request, render_template, redirect, url_for
 
 app = Flask(__name__)
 
-friend_list = [
-    {"name": "Test", "flavor": "swirl", "read": "yes", "activities": "reading"}
+books_dict = [
+    {"title": "The Hobbit", "author": "J.R.R. Tolkien", "pages": "295", "classification": "fiction", "details":"read, recommend","acquisition":"library" }
 ]
 
 
 @app.route("/", methods=["GET", "POST"])
 def index():
     return render_template(
-        "index.html", pageTitle="Home Page", friends=friend_list
+        "index.html", pageTitle="My Library", books=books_dict
     )
 
 
@@ -21,33 +21,37 @@ def add():
 
         form = request.form
 
-        fname = form["fname"]
-        flavor = form["flavor"]
-        read = form["read"]
-        # activities = form["activites"]
-        # print(request.form.getlist("activites"))
-        print(fname)
-        print(flavor)
-        print(read)
-        # print(activities)
+        title = form["title"]
+        author = form["author"]
+        pages = form["pages"]
+        classification = form["classification"]
+        details = form.getlist("details")
+        acquisition = form["acquisition"]
 
-        friend_dict = {
-            "name": fname,
-            "flavor": flavor,
-            "read": read,
-            #   "activities": activities,
+        details_string = ", ".join(details)
+
+        add_book_dict = {
+            "title": title,
+            "author": author,
+            "pages": pages,
+            "classifiction": classification,
+            "details": details_string,
+            "acquisition": acquisition,
         }
-        print(friend_dict)
-        friend_list.append(friend_dict)
-        print(friend_list)
+        print(add_book_dict)
+        books_dict.append(
+            add_book_dict
+        )
+        print(books_dict)
+
         return redirect(url_for("index"))
     else:
         return redirect(url_for("index"))
     
-@app.route("/about", methods=["GET","POST"])
+@app.route("/about", methods=["GET"])
 def about():
     return render_template(
-        "about.html", pageTitle="About us", friends=friend_list
+        "about.html", pageTitle="About My Library"
     )
     
 if __name__ == "__main__":
