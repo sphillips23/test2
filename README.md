@@ -50,5 +50,5 @@ Basic structure for starting a Flask web form project with Jinja templates
 ### 4. Select one or multiple details about the book you are entering
 ### 5. Select an option from the drop down menu of how you got the book being entered
 ### 6. Click 'Add Book' and see your book be added to the List of books at the bottom of the page
-### 7. Feel free to add as many books as you want and you can see the creators of the webpage by clicking the About link at the top of the page. To return to the application click the Home link at the top of the page. 
+### 7. Feel free to add as many books as you want and you can see the creators of the webpage by clicking the About link at the top of the page. To return to the application, click the Home link at the top of the page. 
 
