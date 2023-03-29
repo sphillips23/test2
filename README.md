@@ -40,3 +40,15 @@ Basic structure for starting a Flask web form project with Jinja templates
 ### TO-DO
 
 - [ ] Catch all selected activities in /add and put them into the list
+
+# Sarah Phillips and Beth Tiggelaar
+## Our application keeps track of the books added to our library. It inlcudes the title, author, pages, classification, details, and acquisition information for each book added. There is also an About page that can be accessed through a link at the top of the page with the names and a picture of the application creators. 
+## Instructions for running the application
+### 1. Open the webpage
+### 2. Fill in the text boxes for title, author, and pages
+### 3. Choose a classification for the book - fiction or non-fiction
+### 4. Select one or multiple details about the book you are entering
+### 5. Select an option from the drop down menu of how you got the book being entered
+### 6. Click 'Add Book' and see your book be added to the List of books at the bottom of the page
+### 7. Feel free to add as many books as you want and you can see the creators of the webpage by clicking the About link at the top of the page. To return to the application click the Home link at the top of the page. 
+
