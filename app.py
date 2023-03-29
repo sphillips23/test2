@@ -28,13 +28,21 @@ def add():
         details = form.getlist("details")
         acquisition = form["acquisition"]
 
+        print(title)
+        print(author)
+        print(pages)
+        print(classification)
+        print(details)
+        print(acquisition)
+        
+
         details_string = ", ".join(details)
 
         add_book_dict = {
             "title": title,
             "author": author,
             "pages": pages,
-            "classifiction": classification,
+            "classification": classification,
             "details": details_string,
             "acquisition": acquisition,
         }

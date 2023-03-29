@@ -4,50 +4,50 @@
 <main>
   <form action="/add" method="POST">
     <p>
-      <label for="title">Title:</label>
-      <input type="text" id="title" name="btitle" />
+      <label for="btitle">Title:</label>
+      <input type="text" id="btitle" name="title" />
     </p>
 
     <p>
-      <label for="author">Author:</label>
-      <input type="text" id="author" name="bauthor" />
+      <label for="bauthor">Author:</label>
+      <input type="text" id="bauthor" name="author" />
     </p>
 
     <p>
-      <label for="pages">Pages:</label>
-      <input type="text" id="pages" name="bpages" />
+      <label for="bpages">Pages:</label>
+      <input type="text" id="bpages" name="pages" />
     </p>
 
 
     <p>
       <label>Classification:</label>
       <label for="c-fiction">
-        <input type="radio" id="c-fiction" name="read" value="fiction" /> fiction
+        <input type="radio" id="c-fiction" name="classification" value="fiction" /> fiction
       </label>
 
       <label for="c-nonfiction">
-        <input type="radio" id="c-nonfiction" name="read" value="nonfiction" /> non-fiction
+        <input type="radio" id="c-nonfiction" name="classification" value="nonfiction" /> non-fiction
       </label>
     </p>
 
     <fieldset>
       <legend>Details:</legend>
-      <label for="own">
+      <label for="bown">
         <input
           type="checkbox"
-          id="own"
-          name="options"
-          value="own-book"
+          id="bown"
+          name="details"
+          value="own"
         />
         I own this book
       </label><br>
 
-      <label for="read">
+      <label for="bread">
         <input
           type="checkbox"
-          id="read"
-          name="options"
-          value="reading"
+          id="bread"
+          name="details"
+          value="read"
         />
         I've read this book
       </label><br>
@@ -56,27 +56,27 @@
         <input
           type="checkbox"
           id="like"
-          name="options"
-          value="liked-it"
+          name="details"
+          value="liked"
         />
         I liked this book
       </label><br>
 
-      <label for="recommend">
+      <label for="brecommend">
         <input
           type="checkbox"
-          id="recommend"
-          name="options"
-          value="recommend-it"
+          id="brecommend"
+          name="details"
+          value="recommend"
         />
         I would recommend this book to others
       </label>
     </fieldset>
 
     <p>
-      <label for="acquisition">
+      <label for="bacquisition">
         How did I get this book?
-        <select name="type" id="acquisition">
+        <select name="acquisition" id="bacquisition">
           <option value="" selected>- Select option -</option>
           <option value="purchase">I purchased it.</option>
           <option value="gift">It was a gift.</option>
