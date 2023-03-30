@@ -10,6 +10,8 @@ Our application keeps track of the books added to our library. It inlcudes the t
 
 ---
 
+![creators photo](pythonflaskphoto.jpg width = 100 "Creators")
+
 ## Instructions for running the application
 
 1. Clone this repository to local computer
