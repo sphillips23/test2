@@ -1,6 +1,6 @@
 # Library of books
 
-Basic Python Flash web application where users can track the books they own and have read. 
+Basic Python Flask web application where users can track the books they own and have read. 
 
 ---
 
