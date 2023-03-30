@@ -4,7 +4,7 @@ Basic Python Flash web application where users can track the books they own and 
 
 ---
 
-# Sarah Phillips and Beth Tiggelaar
+## Sarah Phillips and Beth Tiggelaar
 
 Our application keeps track of the books added to our library. It inlcudes the title, author, pages, classification, details, and acquisition information for each book added. There is also an About page that can be accessed through a link at the top of the page with the names and a picture of the application creators. This project is a part of our Digital Product Management class. 
 
